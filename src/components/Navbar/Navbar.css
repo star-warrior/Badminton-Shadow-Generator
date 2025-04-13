@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0 20px 0;
+  width: 100%;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #636ae8;
+}
+
+.navbar-title.home {
+  color: #fff;
+}
+
+.navbar-link {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-content {
+  font-size: 16px;
+
+  color: #111;
+}
+
+.navbar-content.home {
+  color: #f3f3f3;
+}
