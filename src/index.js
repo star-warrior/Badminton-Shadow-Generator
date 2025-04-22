@@ -10,7 +10,7 @@ import env from 'react-dotenv';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Badminton-Shadow-Generator">
       <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
         <App />
       </GoogleOAuthProvider>
