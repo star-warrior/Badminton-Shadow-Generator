@@ -1,22 +1,32 @@
 import React from "react";
-import CircularSlider from "../CircularSlider/CircularSlider";
-import Navbar from "../Navbar/Navbar";
+import CircularSlider from "../../components/CircularSlider/CircularSlider";
+import Navbar from "../../components/Navbar/Navbar";
 import "./Practice.css";
 import next from "../../assets/images/next.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Parameter({ title = "", min, max, value, onChange }) {
   return (
     <div className="param slider-unit">
       <span className="param-title">{title}</span>
-      <CircularSlider min={min} max={max} value={value} onChange={onChange} />
+      <CircularSlider
+        title={title}
+        min={min}
+        max={max}
+        value={value}
+        onChange={onChange}
+      />
     </div>
   );
 }
 
 const Practice = ({ parameterValues, onParameterChange, googleToken }) => {
+  const navigate = useNavigate();
+  function navigateBack() {
+    navigate(-1);
+  }
   return (
-    <div>
+    <div className="body">
       <Navbar googleToken={googleToken} />
       <div className="practice set-routine-page">
         <div className="title">
@@ -54,9 +64,17 @@ const Practice = ({ parameterValues, onParameterChange, googleToken }) => {
         </div>
       </div>
 
-      <div className="navigator">
+      <div className=" navigator">
+        <Link
+          className="back"
+          onClick={() => {
+            navigateBack();
+          }}
+        >
+          <img src={next} alt="" /> Back{" "}
+        </Link>
         <Link to="/practice/corner" className="next">
-          Next <img src={next} alt="" />
+          Next <img src={next} alt="" srcset="" />
         </Link>
       </div>
     </div>

@@ -1,0 +1,114 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: centers;
+}
+
+.cornerSelection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  position: relative;
+  background: #636ae8;
+  width: 90%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  position: inherit;
+  padding-top: 20px;
+}
+
+.frontLeft {
+  position: absolute;
+  top: 12%; /* 55px relative to court height */
+  left: 18%; /* 50px relative to court width */
+}
+
+.frontRight {
+  position: absolute;
+  top: 12%;
+  right: 18%;
+}
+
+.midLeft {
+  position: absolute;
+  top: 45%; /* 160px from top */
+  left: 18%;
+}
+
+.midRight {
+  position: absolute;
+  top: 45%;
+  right: 18%;
+}
+
+.backLeft {
+  position: absolute;
+  left: 18%;
+  bottom: 13%;
+}
+
+.backRight {
+  position: absolute;
+  right: 18%;
+  bottom: 13%;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #27e112;
+  border-color: #27e112;
+  /* White checkmark SVG as a background */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 10'><polyline points='1.5 6 4.5 9 10.5 1' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  gap: 20px;
+  width: 70%;
+}
+
+.next,
+.back {
+  text-decoration: none;
+  font-size: 18px;
+  color: #808080;
+}
+
+.next img {
+  height: 14px;
+  padding-left: 7px;
+}
+
+.back img {
+  height: 14px;
+  padding: 0 0 20px 7px;
+  transform: rotate(180deg);
+}

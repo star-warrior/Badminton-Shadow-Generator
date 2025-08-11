@@ -7,6 +7,7 @@ const CircularSlider = ({
   value = 50,
   onChange,
   size = 150,
+  title,
 }) => {
   const [isDragging, setIsDragging] = useState(false);
   const sliderRef = useRef(null);
