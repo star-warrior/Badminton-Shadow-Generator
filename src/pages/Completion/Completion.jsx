@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import "./Completion.css";
 
 const Completion = ({ googleToken }) => {

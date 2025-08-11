@@ -1,4 +1,4 @@
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import "./Start.css";
 import halfCourt from "../../assets/images/Half_Court.png";
 import arrow from "../../assets/images/arrow.png";

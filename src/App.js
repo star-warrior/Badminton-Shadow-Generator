@@ -1,12 +1,12 @@
 import './App.css';
-import HomePage from './components/Home-page/Homepage';
+import HomePage from './pages/Home-page/Homepage';
 import Login from './components/Login/Login';
 import { Routes, Route } from 'react-router-dom';
-import Practice from './components/practise/Practice';
-import Corner from "./components/Corner/Index.jsx";
-import Start from './components/Start/Start';
+import Practice from './pages/practise/Practice';
+import Corner from "./pages/Corner/Index.jsx";
+import Start from './pages/Start/Start.jsx';
 import { useState } from 'react';
-import Completion from './components/Completion/Completion';
+import Completion from './pages/Completion/Completion.jsx';
 
 
 function App() {
@@ -52,7 +52,7 @@ function App() {
             <Corner
               corners={corners}
               setCorners={setCorners}
-              googleToken={googleToken}
+            // googleToken={googleToken}
             />
           }
         />
@@ -62,11 +62,11 @@ function App() {
             <Start
               corners={corners}
               parameterValues={parameterValues}
-              googleToken={googleToken}
+            // googleToken={googleToken}
             />
           }
         />
-        <Route path="/completion" element={<Completion googleToken={googleToken} />} />
+        <Route path="/completion" element={<Completion />} />
       </Routes>
     </div>
   );

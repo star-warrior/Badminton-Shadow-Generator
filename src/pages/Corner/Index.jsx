@@ -1,10 +1,10 @@
 import React from "react";
 import halfCourt from "../../assets/images/Half_Court.png";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import { useState } from "react";
 import "./srtyle.css";
 import next from "../../assets/images/next.png";
-import { Link } from "react-router-dom";
+import { Link, Router, useNavigate } from "react-router-dom";
 
 export default function Corner({ corners, setCorners, googleToken }) {
   function handleCorners(cornerName) {
@@ -17,6 +17,11 @@ export default function Corner({ corners, setCorners, googleToken }) {
       return [...prev, cornerName];
     });
     console.log(corners);
+  }
+
+  const navigate = useNavigate();
+  function navigateBack() {
+    navigate(-1);
   }
 
   return (
@@ -84,6 +89,14 @@ export default function Corner({ corners, setCorners, googleToken }) {
         </form>
       </div>
       <div className=" navigator">
+        <Link
+          className="back"
+          onClick={() => {
+            navigateBack();
+          }}
+        >
+          <img src={next} alt="" /> Back{" "}
+        </Link>
         <Link to="/practice/start" className="next">
           Start Practice <img src={next} alt="" srcset="" />
         </Link>

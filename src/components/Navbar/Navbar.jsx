@@ -14,7 +14,7 @@ export default function Navbar({ on, googleToken }) {
           }
           to="/"
         >
-          <span>ShadowMate</span>
+          <span>🏸 ShadowMate</span>
         </Link>
       </div>
       <div className="navbar-links">
@@ -26,9 +26,9 @@ export default function Navbar({ on, googleToken }) {
           }
           to="/practice"
         >
-          Let's Practice
+          Start Session
         </Link>
-        {googleToken !== null ? (
+        {/* {googleToken !== null ? (
           <NavbarDropdown
             className={
               on === "homePage"
@@ -50,7 +50,7 @@ export default function Navbar({ on, googleToken }) {
           >
             Login
           </Link>
-        )}
+        )} */}
       </div>
     </div>
   );
