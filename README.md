@@ -2,6 +2,8 @@
 
 ShadowMate is a web application designed to help badminton players practice their footwork and court movement through shadow practice. The application generates random movement patterns on a badminton court, helping players improve their agility, reaction time, and court coverage.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f50afe9-98e3-4d7c-9785-13b0b4cd9fda/deploy-status)](https://app.netlify.com/projects/shadowmate/deploys)
+
 ## Features
 
 - **Customizable Practice Sessions**
