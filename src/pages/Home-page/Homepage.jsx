@@ -4,6 +4,7 @@ import "./HomePage.css"; // Import the CSS file
 import Navbar from "../../components/Navbar/Navbar";
 import badminton_court from "../../assets/images/badminton_court.png";
 import shuttle from "../../assets/images/shuttlecock.png";
+import Footer from "../../components/Footer/Footer";
 
 const HomePage = ({ googleToken }) => {
   return (
@@ -22,6 +23,8 @@ const HomePage = ({ googleToken }) => {
         <img className="shuttle-image" src={shuttle} alt="shuttle" />
         <img className="shuttle-image two" src={shuttle} alt="shuttle" />
       </div>
+
+      <Footer />
     </div>
   );
 };
