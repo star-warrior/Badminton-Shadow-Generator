@@ -46,5 +46,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://star-warrior.github.io/Badminton-Shadow-Generator"
+  "homepage": "https://star-warrior.github.io/Badminton-Shadow-Generator",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
