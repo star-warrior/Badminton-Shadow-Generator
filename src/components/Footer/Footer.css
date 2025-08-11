@@ -1,0 +1,46 @@
+.footer {
+  background-color: #ffffff80; /* Darker indigo-purple for depth */
+  color: #4b5563;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links a img {
+  height: 2rem;
+}
+
+.social-links a img:hover {
+  scale: 1.2;
+  transition: all 0.3s ease; /* Slightly brighter accent on hover */
+}
+
+.footer-copy {
+  font-size: 0.9em;
+  color: #4b5563;
+  margin-top: 20px;
+}
+
+/* Optional Fade-in Animation for Immersion */
+.footer {
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
