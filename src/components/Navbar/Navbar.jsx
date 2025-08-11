@@ -1,6 +1,5 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import NavbarDropdown from "../dropdown/Dropdown";
 
 export default function Navbar({ on, googleToken }) {
   return (
