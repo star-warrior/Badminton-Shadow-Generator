@@ -1,10 +1,9 @@
 import React from "react";
 import halfCourt from "../../assets/images/Half_Court.png";
 import Navbar from "../../components/Navbar/Navbar";
-import { useState } from "react";
 import "./srtyle.css";
 import next from "../../assets/images/next.png";
-import { Link, Router, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Corner({ corners, setCorners, googleToken }) {
   function handleCorners(cornerName) {

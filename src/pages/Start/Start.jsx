@@ -153,6 +153,7 @@ const Start = ({ corners, parameterValues, googleToken }) => {
     gapTime,
     navigate,
     sessionStats,
+    parameterValues,
   ]);
 
   // Loading screen render
