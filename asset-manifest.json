@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Badminton-Shadow-Generator/static/css/main.2119b4e4.css",
+    "main.css": "/Badminton-Shadow-Generator/static/css/main.8b52f697.css",
     "main.js": "/Badminton-Shadow-Generator/static/js/main.6baadc7e.js",
     "static/js/453.4f73f58f.chunk.js": "/Badminton-Shadow-Generator/static/js/453.4f73f58f.chunk.js",
     "static/media/badminton_court.png": "/Badminton-Shadow-Generator/static/media/badminton_court.c5038877a81d04b660a1.png",
@@ -8,12 +8,12 @@
     "static/media/Half_Court.png": "/Badminton-Shadow-Generator/static/media/Half_Court.4765314e936eeeea6050.png",
     "static/media/linkedin.png": "/Badminton-Shadow-Generator/static/media/linkedin.08c7e85b28efe0e057c2.png",
     "index.html": "/Badminton-Shadow-Generator/index.html",
-    "main.2119b4e4.css.map": "/Badminton-Shadow-Generator/static/css/main.2119b4e4.css.map",
+    "main.8b52f697.css.map": "/Badminton-Shadow-Generator/static/css/main.8b52f697.css.map",
     "main.6baadc7e.js.map": "/Badminton-Shadow-Generator/static/js/main.6baadc7e.js.map",
     "453.4f73f58f.chunk.js.map": "/Badminton-Shadow-Generator/static/js/453.4f73f58f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2119b4e4.css",
+    "static/css/main.8b52f697.css",
     "static/js/main.6baadc7e.js"
   ]
 }
