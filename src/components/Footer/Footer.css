@@ -32,6 +32,11 @@
   transition: all 0.3s ease; /* Slightly brighter accent on hover */
 }
 
+.footer .github {
+  text-decoration: none;
+  color: #636ae8;
+}
+
 .footer-copy {
   font-size: 0.9em;
   color: #4b5563;

@@ -10,7 +10,12 @@ function Footer() {
     <div className="footer">
       <hr />
       <div className="footer-content">
-        <span>Made with ❤️, by Jay Mehta</span>
+        <span>
+          Made with ❤️, by{" "}
+          <a className="github" href="https://x.com/JayMehtalcw">
+            Jay Mehta
+          </a>
+        </span>
 
         <p className="footer-copy">
           &copy; {year} ShadowMate — All Rights Reserved
